@@ -49,6 +49,14 @@ function Page3Frame() {
                 }}>
                 처음으로
             </button>
+            <button
+                className={"w-full h-[40px] text-xl font-semibold text-White bg-amber-300 border rounded-2xl"}
+                onClick={() => {
+                    setNowPage(prev => prev - 1);
+                    window.scrollTo(0, 0);
+                }}>
+                이전 장으로 돌아가기
+            </button>
         </div>
     )
 }
